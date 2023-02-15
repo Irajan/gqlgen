@@ -166,7 +166,7 @@ You change this when creating the server:
 ```go
 server := handler.NewDefaultServer(MakeExecutableSchema(resolvers))
 server.SetRecoverFunc(func(ctx context.Context, err interface{}) error {
-    // notify bug tracker...
+    // notify bug tracker. . .
 
 		return gqlerror.Errorf("Internal server error!")
 })
